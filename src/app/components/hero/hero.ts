@@ -14,8 +14,8 @@ import { gsap } from 'gsap';
             <h1 class="hero-title">Descubre la Nueva Era del <span class="text-gradient">E-Commerce</span></h1>
             <p class="hero-subtitle">Productos tecnológicos innovadores que transforman tu vida digital</p>
             <div class="hero-buttons">
-              <button class="btn btn-primary-custom me-3">Explorar Productos</button>
-              <button class="btn btn-outline-custom">Conocer Más</button>
+              <button class="btn btn-primary-custom me-3" href="#productos">Explorar Productos</button>
+              <button class="btn btn-outline-custom" href="#sobre-nosotros">Conocer Más</button>
             </div>
           </div>
           <div class="col-lg-6">
