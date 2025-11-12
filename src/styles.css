@@ -1,0 +1,118 @@
+:root {
+  --primary-orange: #FFB088;
+  --secondary-orange: #FFD4B8;
+  --light-orange: #FFF0E5;
+  --dark-orange: #FF8C52;
+  --white: #FFFFFF;
+  --text-dark: #2C3E50;
+  --text-gray: #7F8C8D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 140, 82, 0.3);
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 140, 82, 0.5);
+  background: linear-gradient(135deg, var(--dark-orange), var(--primary-orange));
+}
+
+.btn-outline-custom {
+  border: 2px solid var(--primary-orange);
+  color: var(--primary-orange);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background: var(--primary-orange);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 176, 136, 0.4);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-orange), var(--dark-orange));
+  border-radius: 2px;
+}
+
+.card-hover {
+  transition: all 0.4s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(255, 140, 82, 0.3);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
